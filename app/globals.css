@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --border: #1e1e1e;
+  --text: #c8c8c8;
+  --muted: #555;
+  --accent: #7b9cff;
+  --rune: #2a2a3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent);
+  color: #000;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.rune-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.03;
+  font-size: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  color: var(--accent);
+  user-select: none;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  color: #e8e8e8;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.prose p {
+  color: var(--text);
+}
+
+.prose code {
+  background: var(--rune);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.prose blockquote {
+  border-left: 2px solid var(--accent);
+  margin-left: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-style: italic;
+}
