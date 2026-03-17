@@ -1,6 +1,8 @@
 import { getAllPosts, getPost } from "@/lib/posts";
 import { remark } from "remark";
-import remarkHtml from "remark-html";
+import remarkRehype from "remark-rehype";
+import rehypeHighlight from "rehype-highlight";
+import rehypeStringify from "rehype-stringify";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -13,7 +15,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const post = getPost(slug);
   if (!post) notFound();
 
-  const processed = await remark().use(remarkHtml).process(post.content);
+  const processed = await remark().use(remarkRehype).use(rehypeHighlight).use(rehypeStringify).process(post.content);
   const html = processed.toString();
 
   return (
