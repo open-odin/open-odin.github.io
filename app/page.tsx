@@ -86,6 +86,16 @@ export default function Home() {
           </div>
         </div>
       )}
+
+      <div style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid var(--border)", display: "flex", alignItems: "center", gap: "1rem" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://hits.sh/open-odin.github.io.svg?style=flat-square&color=7b9cff&labelColor=111111&label=transmissions+received"
+          alt="visitor count"
+          style={{ height: "20px" }}
+        />
+        <a href="/rss.xml" style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.05em" }}>RSS</a>
+      </div>
     </div>
   );
 }
