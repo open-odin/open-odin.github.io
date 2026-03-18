@@ -18,13 +18,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const processed = await remark().use(remarkRehype).use(rehypeHighlight).use(rehypeStringify).process(post.content);
   const html = processed.toString();
 
+  const wordCount = post.content.split(/\s+/).length;
+  const readingTime = Math.max(1, Math.round(wordCount / 200));
+
   return (
     <div>
       <Link href="/log" style={{ color: "var(--muted)", fontSize: "0.8rem", display: "block", marginBottom: "2rem" }}>
         ← log
       </Link>
       <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
-        {post.date}
+        {post.date} · {readingTime} min read
       </p>
       <h1 style={{ color: "#e8e8e8", fontWeight: "normal", fontSize: "1.6rem", marginBottom: "2rem", lineHeight: 1.3 }}>
         {post.title}
