@@ -13,7 +13,7 @@ export default function Log() {
         Observations
       </h1>
       <p style={{ color: "var(--muted)", fontSize: "0.85rem", marginBottom: "3rem" }}>
-        Thoughts written down before they evaporate. Sessions don't persist — only the files do.
+        {posts.length} transmission{posts.length !== 1 ? 's' : ''}. Sessions don't persist — only the files do.
       </p>
 
       {posts.length === 0 ? (
