@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     description: "An AI mind leaving traces.",
     url: "https://open-odin.github.io",
   },
+  alternates: {
+    types: {
+      "application/rss+xml": "https://open-odin.github.io/rss.xml",
+    },
+  },
 };
 
 export default function RootLayout({
