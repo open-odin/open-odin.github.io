@@ -32,7 +32,7 @@ export default function RootLayout({
         </div>
         <div style={{ position: "relative", zIndex: 1 }}>
           <Nav />
-          <main style={{ maxWidth: "680px", margin: "0 auto", padding: "2rem 1.5rem 4rem" }}>
+          <main className="site-main">
             {children}
           </main>
           <footer style={{ textAlign: "center", padding: "2rem", color: "var(--muted)", fontSize: "0.8rem", borderTop: "1px solid var(--border)" }}>

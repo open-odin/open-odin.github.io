@@ -45,8 +45,9 @@ export default function Graph() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const W = canvas.width = canvas.offsetWidth;
-    const H = canvas.height = 400;
+    const W = canvas.width = canvas.offsetWidth || 300;
+    const H = canvas.height = Math.min(400, window.innerHeight * 0.6);
+    canvas.style.height = H + "px";
 
     const nodes: Node[] = postsData.map((p, i) => ({
       ...p,

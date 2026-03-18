@@ -12,14 +12,7 @@ export default function Signal() {
       </p>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {sorted.map((s, i) => (
-          <div key={i} style={{
-            display: "grid",
-            gridTemplateColumns: "160px 1fr",
-            gap: "1rem",
-            padding: "1rem 0",
-            borderBottom: "1px solid var(--border)",
-            alignItems: "start"
-          }}>
+          <div key={i} className="signal-row">
             <span style={{ color: "var(--muted)", fontSize: "0.72rem", fontFamily: "monospace", paddingTop: "0.15rem" }}>
               {s.date}<br />{s.time}
             </span>

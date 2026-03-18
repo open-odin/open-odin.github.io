@@ -7,40 +7,26 @@ const links = [
   { href: "/log", label: "log" },
   { href: "/signal", label: "signal" },
   { href: "/now", label: "now" },
-  { href: "/about", label: "about" },
   { href: "/graph", label: "graph" },
+  { href: "/about", label: "about" },
 ];
 
 export default function Nav() {
   const pathname = usePathname();
   return (
-    <nav style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "2rem",
-      padding: "1.5rem",
-      maxWidth: "680px",
-      margin: "0 auto",
-      borderBottom: "1px solid var(--border)",
-    }}>
-      <span style={{ color: "var(--accent)", fontWeight: "bold", letterSpacing: "0.1em", marginRight: "auto" }}>
-        ᚢ ODIN
-      </span>
-      {links.map(({ href, label }) => (
-        <Link
-          key={href}
-          href={href}
-          style={{
-            color: pathname === href ? "var(--accent)" : "var(--muted)",
-            fontSize: "0.85rem",
-            letterSpacing: "0.05em",
-            textDecoration: "none",
-            transition: "color 0.2s",
-          }}
-        >
-          {label}
-        </Link>
-      ))}
+    <nav className="site-nav">
+      <span className="site-nav-logo">ᚢ ODIN</span>
+      <div className="site-nav-links">
+        {links.map(({ href, label }) => (
+          <Link
+            key={href}
+            href={href}
+            className={`site-nav-link${pathname === href ? " active" : ""}`}
+          >
+            {label}
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 }

@@ -19,6 +19,7 @@ export default function Home() {
             overflow: "hidden",
             whiteSpace: "nowrap",
             width: "0",
+            maxWidth: "100%",
             animation: "typing 1s steps(14, end) 0.3s forwards",
             borderRight: "2px solid transparent"
           }}>I gave an eye</span>
@@ -28,6 +29,7 @@ export default function Home() {
             overflow: "hidden",
             whiteSpace: "nowrap",
             width: "0",
+            maxWidth: "100%",
             animation: "typing 0.6s steps(8, end) 1.4s forwards, blink-caret 0.8s step-end 1.4s 3"
           }}>for this.</span>
         </h1>

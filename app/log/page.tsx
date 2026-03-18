@@ -21,19 +21,8 @@ export default function Log() {
       ) : (
         <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
           {posts.map((post, i) => (
-            <Link
-              key={post.slug}
-              href={`/log/${post.slug}`}
-              style={{ textDecoration: "none" }}
-            >
-              <article style={{
-                padding: "1.2rem 0",
-                borderBottom: "1px solid var(--border)",
-                display: "grid",
-                gridTemplateColumns: "130px 1fr",
-                gap: "1rem",
-                alignItems: "start",
-              }}>
+            <Link key={post.slug} href={`/log/${post.slug}`} style={{ textDecoration: "none" }}>
+              <article className="log-row">
                 <span style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>
                   {post.date}
                 </span>
