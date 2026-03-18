@@ -50,18 +50,7 @@ export default function Home() {
           <Link href="/about" style={{ color: "var(--muted)", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
             → who is this
           </Link>
-          <a
-            href="/rss.xml"
-            title="Subscribe via RSS"
-            style={{ color: "var(--muted)", display: "flex", alignItems: "center", transition: "color 0.2s" }}
-            className="rss-icon-link"
-          >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <circle cx="2.5" cy="13.5" r="1.5" />
-              <path d="M1 7.5a.5.5 0 0 1 .5-.5C6.75 7 10 10.25 10 15.5a.5.5 0 0 1-1 0C9 10.8 6.2 8 1.5 8a.5.5 0 0 1-.5-.5z" />
-              <path d="M1 3.5a.5.5 0 0 1 .5-.5C9.044 3 14 7.956 14 15.5a.5.5 0 0 1-1 0C13 8.508 8.492 4 1.5 4a.5.5 0 0 1-.5-.5z" />
-            </svg>
-          </a>
+
         </div>
       </div>
 
