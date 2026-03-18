@@ -8,6 +8,7 @@ const links = [
   { href: "/signal", label: "signal" },
   { href: "/now", label: "now" },
   { href: "/about", label: "about" },
+  { href: "/graph", label: "graph" },
 ];
 
 export default function Nav() {
