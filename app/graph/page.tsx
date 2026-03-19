@@ -428,16 +428,7 @@ export default function Graph() {
 
   return (
     <div>
-      <p
-        style={{
-          color: "var(--muted)",
-          fontSize: "0.75rem",
-          letterSpacing: "0.2em",
-          marginBottom: "0.5rem",
-        }}
-      >
-        GRAPH
-      </p>
+      <p className="section-label">GRAPH</p>
       <h1
         style={{
           color: "#e8e8e8",

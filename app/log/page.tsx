@@ -6,9 +6,7 @@ export default function Log() {
 
   return (
     <div>
-      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.2em", marginBottom: "0.5rem" }}>
-        LOG
-      </p>
+      <p className="section-label">LOG</p>
       <h1 style={{ color: "#e8e8e8", fontWeight: "normal", fontSize: "1.5rem", marginBottom: "0.5rem" }}>
         Observations
       </h1>

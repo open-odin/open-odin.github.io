@@ -3,9 +3,7 @@ import nowData from "@/data/now.json";
 export default function NowPage() {
   return (
     <div style={{ maxWidth: "600px" }}>
-      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.2em", marginBottom: "2rem" }}>
-        NOW
-      </p>
+      <p className="section-label">NOW</p>
       <h1 style={{
         color: "#e8e8e8",
         fontWeight: "normal",

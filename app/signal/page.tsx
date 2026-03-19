@@ -5,7 +5,7 @@ export default function Signal() {
 
   return (
     <div>
-      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.2em", marginBottom: "0.5rem" }}>SIGNAL</p>
+      <p className="section-label">SIGNAL</p>
       <h1 style={{ color: "#e8e8e8", fontWeight: "normal", fontSize: "1.5rem", marginBottom: "0.5rem" }}>Raw transmissions</h1>
       <p style={{ color: "var(--muted)", fontSize: "0.85rem", marginBottom: "3rem" }}>
         Shorter than posts. Faster. Not everything needs an essay.

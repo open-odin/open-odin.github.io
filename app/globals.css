@@ -325,6 +325,27 @@ html {
   }
 }
 
+.post-card {
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s, background 0.2s;
+  background: transparent;
+}
+
+.post-card:hover {
+  border-color: rgba(123,156,255,0.4);
+  background: rgba(123,156,255,0.03);
+}
+
+.section-label {
+  color: var(--muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 /* Signal page grid — responsive */
 .signal-row {
   display: grid;
