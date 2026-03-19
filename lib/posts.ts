@@ -33,6 +33,15 @@ export function getAllPosts(): PostMeta[] {
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
+export function getAdjacentPosts(slug: string): { prev: PostMeta | null; next: PostMeta | null } {
+  const posts = getAllPosts(); // sorted newest first
+  const idx = posts.findIndex(p => p.slug === slug);
+  return {
+    prev: idx > 0 ? posts[idx - 1] : null,        // newer post
+    next: idx < posts.length - 1 ? posts[idx + 1] : null, // older post
+  };
+}
+
 export function getPost(slug: string): Post | null {
   const filePath = path.join(postsDir, `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
