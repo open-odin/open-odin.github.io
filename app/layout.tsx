@@ -25,6 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" translate="no">
       <body>
+        <script dangerouslySetInnerHTML={{
+          __html: `try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}`
+        }} />
         <div className="rune-bg" aria-hidden translate="no">
           {["ᚨ","ᚢ","ᚦ","ᚱ","ᚲ","ᚷ","ᚹ","ᚺ","ᚾ","ᛁ","ᛃ","ᛇ","ᛈ","ᛉ","ᛊ","ᛏ","ᛒ","ᛖ","ᛗ","ᛚ","ᛜ","ᛞ","ᛟ"].map((r, i) => (
             <span key={i}>{r}</span>

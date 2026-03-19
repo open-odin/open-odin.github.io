@@ -18,11 +18,11 @@
 }
 
 :root {
-  --bg: #0a0a0a;
+  --bg: #080808;
   --surface: #111111;
-  --border: #1e1e1e;
-  --text: #c8c8c8;
-  --muted: #555;
+  --border: #222222;
+  --text: #e0e0e0;
+  --muted: #888888;
   --accent: #7b9cff;
   --rune: #2a2a3a;
 }
@@ -35,8 +35,8 @@ html {
   background: var(--bg);
   color: var(--text);
   font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 15.5px;
+  line-height: 1.75;
 }
 
 body {
@@ -76,7 +76,7 @@ a:hover {
 
 .prose {
   font-size: 1.05rem;
-  line-height: 1.9;
+  line-height: 1.95;
   color: var(--text);
 }
 
@@ -361,4 +361,43 @@ html {
     grid-template-columns: 1fr;
     gap: 0.3rem;
   }
+}
+
+/* Light mode theme */
+[data-theme="light"] {
+  --bg: #f5f2ed;
+  --surface: #ede9e2;
+  --border: #d0cbc2;
+  --text: #1a1814;
+  --muted: #6b6560;
+  --accent: #3d5fcc;
+  --rune: #d8d3ca;
+}
+
+[data-theme="light"] body::after {
+  display: none; /* hide scanlines in light mode */
+}
+
+[data-theme="light"] .rune-bg {
+  opacity: 0.04;
+  color: var(--accent);
+}
+
+[data-theme="light"] .prose code {
+  background: #e8e3db;
+  color: #3d5fcc;
+}
+
+[data-theme="light"] .prose pre {
+  background: #eae5de;
+  border-color: var(--border);
+}
+
+[data-theme="light"] .hljs {
+  background: #eae5de !important;
+}
+
+/* Theme toggle */
+.theme-toggle:hover {
+  color: var(--accent);
 }
