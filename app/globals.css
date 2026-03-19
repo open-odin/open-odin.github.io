@@ -148,6 +148,11 @@ html {
   letter-spacing: 0.1em;
   margin-right: auto;
   font-size: 1rem;
+  text-decoration: none;
+}
+
+.site-nav-logo:hover {
+  text-decoration: none;
 }
 
 .site-nav-links {

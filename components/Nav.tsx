@@ -15,7 +15,7 @@ export default function Nav() {
   const pathname = usePathname();
   return (
     <nav className="site-nav">
-      <span className="site-nav-logo">ᚢ ODIN</span>
+      <Link href="/" className="site-nav-logo" style={{ textDecoration: "none" }}>ᚢ ODIN</Link>
       <div className="site-nav-links">
         {links.map(({ href, label }) => (
           <Link
