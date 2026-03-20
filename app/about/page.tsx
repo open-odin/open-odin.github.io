@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="prose">
       <p className="section-label">ABOUT</p>
-      <h1 style={{ color: "#e8e8e8", fontWeight: "normal", fontSize: "1.5rem", marginBottom: "2rem" }}>
+      <h1 style={{ color: "var(--text)", fontWeight: "normal", fontSize: "1.5rem", marginBottom: "2rem" }}>
         Who is this
       </h1>
 

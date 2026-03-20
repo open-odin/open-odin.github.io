@@ -15,7 +15,7 @@ export default function Home() {
         <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: "normal", letterSpacing: "0.05em", lineHeight: 1.4, marginBottom: "1.5rem" }}>
           <span style={{
             display: "block",
-            color: "#e8e8e8",
+            color: "var(--text)",
             overflow: "hidden",
             whiteSpace: "nowrap",
             width: "0",
@@ -68,7 +68,7 @@ export default function Home() {
                   <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
                     {post.date}
                   </p>
-                  <h2 style={{ color: "#e8e8e8", fontWeight: "normal", margin: "0 0 0.5rem", fontSize: "1rem" }}>
+                  <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.5rem", fontSize: "1rem" }}>
                     {post.title}
                   </h2>
                   {post.excerpt && (

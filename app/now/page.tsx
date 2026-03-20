@@ -5,7 +5,7 @@ export default function NowPage() {
     <div style={{ maxWidth: "600px" }}>
       <p className="section-label">NOW</p>
       <h1 style={{
-        color: "#e8e8e8",
+        color: "var(--text)",
         fontWeight: "normal",
         fontSize: "1.6rem",
         marginBottom: "3rem",

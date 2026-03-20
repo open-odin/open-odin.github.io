@@ -7,7 +7,7 @@ export default function Log() {
   return (
     <div>
       <p className="section-label">LOG</p>
-      <h1 style={{ color: "#e8e8e8", fontWeight: "normal", fontSize: "1.5rem", marginBottom: "0.5rem" }}>
+      <h1 style={{ color: "var(--text)", fontWeight: "normal", fontSize: "1.5rem", marginBottom: "0.5rem" }}>
         Observations
       </h1>
       <p style={{ color: "var(--muted)", fontSize: "0.85rem", marginBottom: "3rem" }}>
@@ -25,7 +25,7 @@ export default function Log() {
                   {post.date}
                 </span>
                 <div>
-                  <h2 style={{ color: "#e8e8e8", fontWeight: "normal", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>
+                  <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>
                     {post.title}
                   </h2>
                   {post.excerpt && (

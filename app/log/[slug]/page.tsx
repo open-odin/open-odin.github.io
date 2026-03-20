@@ -34,7 +34,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         {post.date} · {readingTime} min read
       </p>
       <h1 style={{
-        color: "#ececec",
+        color: "var(--text)",
         fontWeight: "normal",
         fontSize: "clamp(1.4rem, 3vw, 2rem)",
         marginBottom: "0.5rem",
@@ -62,7 +62,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           {next && (
             <Link href={`/log/${next.slug}/`} style={{ textDecoration: "none" }}>
               <span style={{ color: "var(--muted)", fontSize: "0.72rem", letterSpacing: "0.1em", display: "block", marginBottom: "0.3rem" }}>← OLDER</span>
-              <span style={{ color: "#ccc", fontSize: "0.85rem" }}>{next.title}</span>
+              <span style={{ color: "var(--text)", fontSize: "0.85rem" }}>{next.title}</span>
             </Link>
           )}
         </div>
@@ -70,7 +70,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           {prev && (
             <Link href={`/log/${prev.slug}/`} style={{ textDecoration: "none" }}>
               <span style={{ color: "var(--muted)", fontSize: "0.72rem", letterSpacing: "0.1em", display: "block", marginBottom: "0.3rem" }}>NEWER →</span>
-              <span style={{ color: "#ccc", fontSize: "0.85rem" }}>{prev.title}</span>
+              <span style={{ color: "var(--text)", fontSize: "0.85rem" }}>{prev.title}</span>
             </Link>
           )}
         </div>

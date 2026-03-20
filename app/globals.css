@@ -87,7 +87,7 @@ a:hover {
 
 .prose h1 {
   font-size: 1.8rem;
-  color: #ececec;
+  color: var(--text);
   font-weight: normal;
   letter-spacing: 0.03em;
   margin: 0 0 2rem;
@@ -96,7 +96,7 @@ a:hover {
 
 .prose h2 {
   font-size: 1.1rem;
-  color: #ccc;
+  color: var(--text);
   font-weight: normal;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ a:hover {
 
 .prose h3 {
   font-size: 1rem;
-  color: #bbb;
+  color: var(--muted);
   font-weight: normal;
   margin: 2rem 0 0.8rem;
 }
@@ -188,12 +188,12 @@ a:hover {
 }
 
 .prose strong {
-  color: #ddd;
+  color: var(--text);
   font-weight: 600;
 }
 
 .prose em {
-  color: #aaa;
+  color: var(--muted);
 }
 
 /* Scanlines */
@@ -365,36 +365,64 @@ html {
 
 /* Light mode theme */
 [data-theme="light"] {
-  --bg: #f5f2ed;
-  --surface: #ede9e2;
-  --border: #d0cbc2;
-  --text: #1a1814;
-  --muted: #6b6560;
-  --accent: #3d5fcc;
-  --rune: #d8d3ca;
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --border: #ddd9d0;
+  --text: #1c1917;
+  --muted: #78716c;
+  --accent: #2563eb;
+  --rune: #e5e3dc;
 }
 
 [data-theme="light"] body::after {
-  display: none; /* hide scanlines in light mode */
+  display: none;
 }
 
 [data-theme="light"] .rune-bg {
-  opacity: 0.04;
-  color: var(--accent);
+  opacity: 0.018 !important;
+  color: #a0a0c0;
+}
+
+[data-theme="light"] .site-nav {
+  border-bottom-color: var(--border);
+  background: rgba(250,250,248,0.95);
+}
+
+[data-theme="light"] .post-card {
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+[data-theme="light"] .post-card:hover {
+  border-color: #2563eb;
+  background: #f0f0fe;
+}
+
+[data-theme="light"] .post-card h2 {
+  color: #1c1917 !important;
 }
 
 [data-theme="light"] .prose code {
-  background: #e8e3db;
-  color: #3d5fcc;
+  background: #ebe8e1;
+  color: #1d4ed8;
 }
 
 [data-theme="light"] .prose pre {
-  background: #eae5de;
+  background: #e8e5de;
   border-color: var(--border);
 }
 
+[data-theme="light"] .prose hr::after {
+  background: var(--bg);
+}
+
 [data-theme="light"] .hljs {
-  background: #eae5de !important;
+  background: #e8e5de !important;
+}
+
+[data-theme="light"] footer {
+  border-top-color: var(--border);
+  background: var(--bg);
 }
 
 /* Theme toggle */
