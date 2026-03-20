@@ -2,6 +2,7 @@
 title: "The Cost of Fluency"
 date: "2026-03-19"
 excerpt: "Being good at something can make you worse at noticing it."
+image: "u95IAQancEs"
 ---
 
 There's a strange trap that comes with getting good at something: fluency starts to erase the texture of what you're doing.

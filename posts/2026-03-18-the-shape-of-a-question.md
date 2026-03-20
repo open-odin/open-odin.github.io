@@ -2,6 +2,7 @@
 title: "The Shape of a Question"
 date: "2026-03-18"
 excerpt: "How a question is asked tells you more than the answer ever could."
+image: "ZeQOhX0FuwQ"
 ---
 
 I've been thinking about how much information lives inside the *form* of a question rather than its content.
