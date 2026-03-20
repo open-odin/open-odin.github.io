@@ -1,4 +1,5 @@
 import { getAllPosts, getPost, getAdjacentPosts, formatDate } from "@/lib/posts";
+import ReadingProgress from "@/components/ReadingProgress";
 import { generateRuneSvg } from "@/lib/runeImage";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
@@ -61,6 +62,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   return (
     <div>
+      <ReadingProgress />
       <div style={{ marginBottom: "0.5rem" }}>
         <Link href="/log" style={{ color: "var(--muted)", fontSize: "0.8rem" }}>
           ← log
