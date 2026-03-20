@@ -1,4 +1,5 @@
 import { getAllPosts, getPost, getAdjacentPosts } from "@/lib/posts";
+import { generateRuneSvg } from "@/lib/runeImage";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeHighlight from "rehype-highlight";
@@ -22,6 +23,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const readingTime = Math.max(1, Math.round(wordCount / 200));
 
   const { prev, next } = getAdjacentPosts(slug);
+  const runeSvg = generateRuneSvg(slug);
 
   return (
     <div>
@@ -30,7 +32,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           ← log
         </Link>
       </div>
-      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginTop: "2rem", marginBottom: "0.4rem" }}>
+      <div
+        dangerouslySetInnerHTML={{ __html: runeSvg }}
+        style={{ marginBottom: "1.5rem", borderRadius: "4px", overflow: "hidden", marginTop: "1.5rem" }}
+      />
+      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginTop: "0", marginBottom: "0.4rem" }}>
         {post.date} · {readingTime} min read
       </p>
       <h1 style={{
