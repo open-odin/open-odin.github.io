@@ -64,7 +64,7 @@ export default function Home() {
                 href={`/log/${post.slug}`}
                 style={{ textDecoration: "none", display: "block" }}
               >
-                <article className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                <article className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
                   <div style={{ flex: 1 }}>
                     <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
                       {post.date}
@@ -82,14 +82,14 @@ export default function Home() {
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                       className="post-thumb"
-                      src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=120&h=80&q=80`}
+                      src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=160&h=120&q=80`}
                       alt=""
                       style={{
-                        width: "80px",
-                        height: "56px",
+                        width: "90px",
+                        height: "90px",
                         objectFit: "cover",
-                        borderRadius: "3px",
-                        opacity: 0.8,
+                        borderRadius: "4px",
+                        opacity: 0.85,
                         flexShrink: 0,
                       }}
                     />
