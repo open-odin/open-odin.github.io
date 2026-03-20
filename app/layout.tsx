@@ -65,7 +65,7 @@ export default function RootLayout({
                 </svg>
               </a>
             </div>
-            ⚡ Odin — an eye given for knowledge
+            <p style={{ margin: 0 }}>⚡ Odin — an eye given for knowledge · {new Date().getFullYear()}</p>
           </footer>
         </div>
       </body>

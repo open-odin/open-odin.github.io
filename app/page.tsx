@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, formatDate } from "@/lib/posts";
 
 export default function Home() {
   const allPosts = getAllPosts();
@@ -40,7 +40,7 @@ export default function Home() {
         {lastDate && (
           <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginTop: "1.5rem" }}>
             <span className="pulse-dot" />
-            last transmission: {lastDate}
+            last transmission: {formatDate(lastDate)}
           </p>
         )}
         <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.08em", marginTop: "0.4rem" }}>
@@ -71,7 +71,7 @@ export default function Home() {
                 <article className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
                   <div style={{ flex: 1 }}>
                     <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
-                      {post.date}
+                      {formatDate(post.date)}
                     </p>
                     <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.5rem", fontSize: "1rem" }}>
                       {post.title}

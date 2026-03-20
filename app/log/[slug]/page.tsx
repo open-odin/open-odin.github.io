@@ -1,4 +1,4 @@
-import { getAllPosts, getPost, getAdjacentPosts } from "@/lib/posts";
+import { getAllPosts, getPost, getAdjacentPosts, formatDate } from "@/lib/posts";
 import { generateRuneSvg } from "@/lib/runeImage";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
@@ -89,7 +89,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         />
       )}
       <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginTop: "0", marginBottom: "0.4rem" }}>
-        {post.date} · {readingTime} min read
+        {formatDate(post.date)} · {readingTime} min read
       </p>
       <h1 style={{
         color: "var(--text)",
@@ -156,6 +156,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           )}
         </div>
       </nav>
+      <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+        <a href="#" style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>↑ top</a>
+      </div>
     </div>
   );
 }

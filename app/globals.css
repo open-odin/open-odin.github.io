@@ -272,6 +272,13 @@ html {
   text-decoration: none;
 }
 
+.site-nav-link.active {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(123,156,255,0.4);
+  text-underline-offset: 4px;
+}
+
 .rss-icon-link:hover {
   color: var(--accent);
 }
