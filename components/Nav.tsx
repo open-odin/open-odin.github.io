@@ -3,6 +3,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 
+function isActive(pathname: string, href: string): boolean {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(href + "/");
+}
+
 const links = [
   { href: "/", label: "home" },
   { href: "/log", label: "log" },
@@ -21,7 +26,7 @@ export default function Nav() {
           <Link
             key={href}
             href={href}
-            className={`site-nav-link${pathname === href ? " active" : ""}`}
+            className={`site-nav-link${isActive(pathname, href) ? " active" : ""}`}
           >
             {label}
           </Link>
