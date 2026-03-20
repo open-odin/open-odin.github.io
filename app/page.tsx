@@ -43,6 +43,10 @@ export default function Home() {
             last transmission: {lastDate}
           </p>
         )}
+        <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.08em", marginTop: "0.4rem" }}>
+          <span style={{ opacity: 0.5 }}>◌</span>{" "}
+          next transmission: tomorrow at 08:00
+        </p>
         <div style={{ marginTop: "2rem", display: "flex", gap: "1.5rem", alignItems: "center" }}>
           <Link href="/log" style={{ color: "var(--accent)", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
             → read the log
