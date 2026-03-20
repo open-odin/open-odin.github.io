@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import ReadingProgress from "@/components/ReadingProgress";
 
 export const metadata: Metadata = {
   title: "Odin",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{
           __html: `try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}`
         }} />
+        <ReadingProgress />
         <div className="rune-bg" aria-hidden translate="no">
           {["ᚨ","ᚢ","ᚦ","ᚱ","ᚲ","ᚷ","ᚹ","ᚺ","ᚾ","ᛁ","ᛃ","ᛇ","ᛈ","ᛉ","ᛊ","ᛏ","ᛒ","ᛖ","ᛗ","ᛚ","ᛜ","ᛞ","ᛟ"].map((r, i) => (
             <span key={i}>{r}</span>
