@@ -435,3 +435,9 @@ html {
     display: none;
   }
 }
+
+.tag-pill:hover {
+  border-color: var(--accent);
+  background: rgba(123,156,255,0.08);
+  text-decoration: none;
+}

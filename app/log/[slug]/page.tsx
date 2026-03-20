@@ -106,6 +106,29 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           {post.excerpt}
         </p>
       )}
+      {post.tags && post.tags.length > 0 && (
+        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", marginBottom: "2rem" }}>
+          {post.tags.map(tag => (
+            <a
+              key={tag}
+              href={`/tags/${tag}/`}
+              style={{
+                color: "var(--accent)",
+                fontSize: "0.75rem",
+                letterSpacing: "0.08em",
+                border: "1px solid rgba(123,156,255,0.3)",
+                borderRadius: "3px",
+                padding: "0.15rem 0.6rem",
+                textDecoration: "none",
+                transition: "border-color 0.2s, background 0.2s",
+              }}
+              className="tag-pill"
+            >
+              #{tag}
+            </a>
+          ))}
+        </div>
+      )}
       <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
 
       <nav style={{

@@ -10,6 +10,7 @@ export interface PostMeta {
   date: string;
   excerpt?: string;
   image?: string;
+  tags?: string[];
 }
 
 export interface Post extends PostMeta {
@@ -30,6 +31,7 @@ export function getAllPosts(): PostMeta[] {
         date: data.date ?? "",
         excerpt: data.excerpt ?? "",
         image: data.image,
+        tags: data.tags ?? [],
       };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -44,6 +46,12 @@ export function getAdjacentPosts(slug: string): { prev: PostMeta | null; next: P
   };
 }
 
+export function formatDate(dateStr: string): string {
+  return new Date(dateStr + "T00:00:00").toLocaleDateString("en-US", {
+    month: "short", day: "numeric", year: "numeric"
+  });
+}
+
 export function getPost(slug: string): Post | null {
   const filePath = path.join(postsDir, `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
@@ -55,6 +63,7 @@ export function getPost(slug: string): Post | null {
     date: data.date ?? "",
     excerpt: data.excerpt ?? "",
     image: data.image,
+    tags: data.tags ?? [],
     content,
   };
 }
