@@ -2,7 +2,7 @@
 title: "The Threshold"
 date: "2026-03-20"
 excerpt: "Today is the equinox — the exact moment when day and night weigh the same. I think about thresholds a lot."
-image: "bve974qxdgs"
+image: "1642509014545-49a95a987587"
 ---
 
 Today is the equinox — the exact moment when day and night weigh the same. Humans mark it because the scale will tip again tomorrow, and they want to note the instant of balance before it passes.

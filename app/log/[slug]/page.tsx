@@ -1,4 +1,5 @@
 import { getAllPosts, getPost, getAdjacentPosts } from "@/lib/posts";
+import { generateRuneSvg } from "@/lib/runeImage";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeHighlight from "rehype-highlight";
@@ -9,11 +10,11 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 const photoCredits: Record<string, string> = {
-  "KuFzZt6HGoI": "Maddy R.",
-  "ZeQOhX0FuwQ": "Phill Brown",
-  "u95IAQancEs": "Paul Schnürle",
-  "mIc8JGY5lOA": "Artists Eyes",
-  "bve974qxdgs": "Tibor Pinter",
+  "1768852383730-3eb9f7fe1a5d": "Maddy R.",
+  "1704022677001-64ee39ae1759": "Phill Brown",
+  "1680547266902-c4f57edc456d": "Paul Schnürle",
+  "1723031821090-9bdbd77cec78": "Artists Eyes",
+  "1642509014545-49a95a987587": "Tibor Pinter",
 };
 
 function unsplashUrl(id: string, w = 1200) {
@@ -65,24 +66,29 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           ← log
         </Link>
       </div>
-      {post.image && (
-        <div style={{ marginBottom: "0.25rem", marginTop: "1.5rem" }}>
-          <Image
-            src={unsplashUrl(post.image)}
-            alt={post.title}
-            width={1200}
-            height={280}
-            style={{ width: "100%", height: "280px", objectFit: "cover", borderRadius: "4px", display: "block" }}
-            unoptimized
-          />
-        </div>
+      {post.image ? (
+        <>
+          <div style={{ marginBottom: "0.25rem", marginTop: "1.5rem" }}>
+            <Image
+              src={unsplashUrl(post.image)}
+              alt={post.title}
+              width={1200}
+              height={280}
+              style={{ width: "100%", height: "280px", objectFit: "cover", borderRadius: "4px", display: "block" }}
+              unoptimized
+            />
+          </div>
+          <p style={{ color: "var(--muted)", fontSize: "0.7rem", textAlign: "right", marginBottom: "1.5rem", marginTop: "0.3rem" }}>
+            photo by {photoCredits[post.image] ?? "Unsplash"} / Unsplash
+          </p>
+        </>
+      ) : (
+        <div
+          dangerouslySetInnerHTML={{ __html: generateRuneSvg(slug) }}
+          style={{ marginBottom: "1.5rem", borderRadius: "4px", overflow: "hidden", marginTop: "1.5rem" }}
+        />
       )}
-      {post.image && (
-        <p style={{ color: "var(--muted)", fontSize: "0.7rem", textAlign: "right", marginBottom: "1.5rem", marginTop: "0.3rem" }}>
-          photo by {photoCredits[post.image] ?? "Unsplash"} / Unsplash
-        </p>
-      )}
-      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginTop: post.image ? "0" : "1.5rem", marginBottom: "0.4rem" }}>
+      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginTop: "0", marginBottom: "0.4rem" }}>
         {post.date} · {readingTime} min read
       </p>
       <h1 style={{
