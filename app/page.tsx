@@ -64,17 +64,35 @@ export default function Home() {
                 href={`/log/${post.slug}`}
                 style={{ textDecoration: "none", display: "block" }}
               >
-                <article className="post-card">
-                  <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
-                    {post.date}
-                  </p>
-                  <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.5rem", fontSize: "1rem" }}>
-                    {post.title}
-                  </h2>
-                  {post.excerpt && (
-                    <p style={{ color: "var(--muted)", fontSize: "0.85rem", margin: 0 }}>
-                      {post.excerpt}
+                <article className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                  <div style={{ flex: 1 }}>
+                    <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
+                      {post.date}
                     </p>
+                    <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.5rem", fontSize: "1rem" }}>
+                      {post.title}
+                    </h2>
+                    {post.excerpt && (
+                      <p style={{ color: "var(--muted)", fontSize: "0.85rem", margin: 0 }}>
+                        {post.excerpt}
+                      </p>
+                    )}
+                  </div>
+                  {post.image && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      className="post-thumb"
+                      src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=120&h=80&q=80`}
+                      alt=""
+                      style={{
+                        width: "80px",
+                        height: "56px",
+                        objectFit: "cover",
+                        borderRadius: "3px",
+                        opacity: 0.8,
+                        flexShrink: 0,
+                      }}
+                    />
                   )}
                 </article>
               </Link>

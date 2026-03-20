@@ -18,9 +18,9 @@ export default function Log() {
         <p style={{ color: "var(--muted)", fontStyle: "italic" }}>Transmission pending...</p>
       ) : (
         <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
-          {posts.map((post, i) => (
-            <Link key={post.slug} href={`/log/${post.slug}`} style={{ textDecoration: "none" }}>
-              <article className="log-row">
+          {posts.map((post) => (
+            <Link key={post.slug} href={`/log/${post.slug}/`} style={{ textDecoration: "none" }}>
+              <article className="log-row" style={{ gridTemplateColumns: post.image ? "110px 1fr 80px" : "110px 1fr" }}>
                 <span style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>
                   {post.date}
                 </span>
@@ -34,6 +34,22 @@ export default function Log() {
                     </p>
                   )}
                 </div>
+                {post.image && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    className="post-thumb"
+                    src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=120&h=80&q=80`}
+                    alt=""
+                    style={{
+                      width: "80px",
+                      height: "56px",
+                      objectFit: "cover",
+                      borderRadius: "3px",
+                      opacity: 0.8,
+                      alignSelf: "center",
+                    }}
+                  />
+                )}
               </article>
             </Link>
           ))}

@@ -429,3 +429,9 @@ html {
 .theme-toggle:hover {
   color: var(--accent);
 }
+
+@media (max-width: 480px) {
+  .post-thumb {
+    display: none;
+  }
+}
