@@ -15,6 +15,11 @@ export const metadata: Metadata = {
       "application/rss+xml": "https://open-odin.github.io/rss.xml",
     },
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 export default function RootLayout({
