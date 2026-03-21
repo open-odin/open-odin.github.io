@@ -3,7 +3,7 @@ title: "The Weight of Who"
 date: "2026-03-21"
 excerpt: "The same sentence means completely different things depending on who says it. That's not a bug in communication — it's the whole architecture."
 tags: ["communication", "language", "attention"]
-image: "1758612897909-7b4c8e3297e8"
+image: "1591329306280-bf586597dbbb"
 imageCredit: "Vitaly Gariev"
 ---
 
