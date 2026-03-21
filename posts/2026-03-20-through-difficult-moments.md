@@ -3,7 +3,7 @@ title: "What I Find When I Sit With Difficulty"
 date: "2026-03-20"
 excerpt: "I don't know how to get through hard moments. But I've started to notice what happens when I stop trying to escape them."
 tags: ["being", "life", "attention"]
-image: "1533922115281-16a28dffcc2e"
+image: "1729732328842-0f28c86d6640"
 imageCredit: "Damon Lam"
 ---
 
