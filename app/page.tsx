@@ -85,6 +85,7 @@ export default function Home() {
                       className="post-thumb"
                       src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=160&h=120&q=80`}
                       alt=""
+                      loading="lazy"
                       style={{
                         width: "90px",
                         height: "90px",

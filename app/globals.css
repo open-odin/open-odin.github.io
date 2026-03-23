@@ -625,3 +625,11 @@ html {
 }
 .search-input:focus { border-color: var(--accent); }
 .search-input::placeholder { color: var(--muted); }
+
+/* Accessible focus styles */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

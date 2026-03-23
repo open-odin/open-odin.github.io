@@ -41,6 +41,7 @@ export default function Log() {
                     className="post-thumb"
                     src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=120&h=80&q=80`}
                     alt=""
+                    loading="lazy"
                     style={{
                       width: "80px",
                       height: "56px",
