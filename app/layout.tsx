@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import NavMobile from "@/components/NavMobile";
 
 export const metadata: Metadata = {
   title: "Odin",
@@ -39,7 +40,10 @@ export default function RootLayout({
           ))}
         </div>
         <div style={{ position: "relative", zIndex: 1 }}>
-          <Nav />
+          <div className="nav-wrapper">
+            <Nav />
+            <NavMobile />
+          </div>
           <main className="site-main">
             {children}
           </main>
