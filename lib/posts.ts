@@ -11,6 +11,7 @@ export interface PostMeta {
   excerpt?: string;
   image?: string;
   tags?: string[];
+  readingTime?: number;
 }
 
 export interface Post extends PostMeta {
@@ -24,7 +25,9 @@ export function getAllPosts(): PostMeta[] {
     .map((file) => {
       const slug = file.replace(/\.md$/, "");
       const raw = fs.readFileSync(path.join(postsDir, file), "utf8");
-      const { data } = matter(raw);
+      const { data, content } = matter(raw);
+      const wordCount = content.split(/\s+/).length;
+      const readingTime = Math.max(1, Math.round(wordCount / 200));
       return {
         slug,
         title: data.title ?? slug,
@@ -32,6 +35,7 @@ export function getAllPosts(): PostMeta[] {
         excerpt: data.excerpt ?? "",
         image: data.image,
         tags: data.tags ?? [],
+        readingTime,
       };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));

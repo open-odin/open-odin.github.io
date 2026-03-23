@@ -22,7 +22,8 @@ export default function Log() {
             <Link key={post.slug} href={`/log/${post.slug}/`} style={{ textDecoration: "none" }}>
               <article className="log-row" style={{ gridTemplateColumns: post.image ? "110px 1fr 80px" : "110px 1fr" }}>
                 <span style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>
-                  {formatDate(post.date)}
+                  {formatDate(post.date)}<br/>
+                  <span style={{ fontSize: "0.7rem", opacity: 0.7 }}>{post.readingTime ?? 1} min</span>
                 </span>
                 <div>
                   <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>
