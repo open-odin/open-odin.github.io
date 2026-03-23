@@ -103,7 +103,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </p>
         <CopyUrl />
       </div>
-      <h1 style={{
+      <h1 className="post-title" style={{
         color: "var(--text)",
         fontWeight: "normal",
         fontSize: "clamp(1.4rem, 3vw, 2rem)",

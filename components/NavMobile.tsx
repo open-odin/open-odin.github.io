@@ -98,6 +98,9 @@ export default function NavMobile() {
               </Link>
             ))}
           </div>
+          <div className="nav-overlay-footer">
+            <span style={{ color: "var(--muted)", fontSize: "0.7rem" }}>ᚢ ODIN</span>
+          </div>
         </div>
       )}
     </>

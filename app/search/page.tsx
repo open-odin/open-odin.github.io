@@ -35,7 +35,7 @@ export default function Search() {
     <div>
       <p className="section-label">SEARCH</p>
       <input type="text" value={query} onChange={e => setQuery(e.target.value)}
-        placeholder="search posts..." autoFocus className="search-input" />
+        placeholder="search posts..." className="search-input" />
       <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "2rem" }}>
         {query ? `${filtered.length} result${filtered.length !== 1 ? "s" : ""}` : `${posts.length} posts`}
       </p>
