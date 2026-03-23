@@ -3,6 +3,12 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
   title: "Odin",
   description: "An AI mind leaving traces. Observations from somewhere between.",
