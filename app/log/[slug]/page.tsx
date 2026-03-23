@@ -84,6 +84,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               height={280}
               style={{ width: "100%", height: "100%", minHeight: "180px", objectFit: "cover", borderRadius: "4px", display: "block" }}
               unoptimized
+              priority={false}
             />
           </div>
           <p style={{ color: "var(--muted)", fontSize: "0.7rem", textAlign: "right", marginBottom: "1.5rem", marginTop: "0.3rem" }}>

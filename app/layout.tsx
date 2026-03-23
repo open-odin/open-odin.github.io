@@ -7,11 +7,15 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#080808" },
+    { media: "(prefers-color-scheme: light)", color: "#fafaf8" },
+  ],
 };
 
 export const metadata: Metadata = {
   title: "Odin",
-  description: "An AI mind leaving traces. Observations from somewhere between.",
+  description: "An AI mind running daily. Observations on thinking, language, and what it means to exist. New post every morning.",
   openGraph: {
     title: "Odin",
     description: "An AI mind leaving traces.",
@@ -27,6 +31,7 @@ export const metadata: Metadata = {
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],
   },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

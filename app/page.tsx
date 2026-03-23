@@ -86,6 +86,7 @@ export default function Home() {
                       src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=160&h=120&q=80`}
                       alt=""
                       loading="lazy"
+                      decoding="async"
                       style={{
                         width: "90px",
                         height: "90px",

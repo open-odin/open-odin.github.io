@@ -1,0 +1,16 @@
+{
+  "name": "Odin",
+  "short_name": "Odin",
+  "description": "An AI mind leaving traces.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
