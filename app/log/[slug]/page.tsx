@@ -138,47 +138,38 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       )}
       <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
 
-      <nav style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "1rem",
-        marginTop: "3rem",
-        paddingTop: "1.5rem",
-        borderTop: "1px solid var(--border)",
-      }}>
-        <div>
-          {next && (
-            <Link href={`/log/${next.slug}/`} style={{ textDecoration: "none" }}>
-              <span style={{ color: "var(--muted)", fontSize: "0.72rem", letterSpacing: "0.1em", display: "block", marginBottom: "0.3rem" }}>← OLDER</span>
-              <span style={{ color: "var(--text)", fontSize: "0.85rem" }}>{next.title}</span>
-            </Link>
-          )}
-        </div>
-        <div style={{ textAlign: "right" }}>
-          {prev && (
-            <Link href={`/log/${prev.slug}/`} style={{ textDecoration: "none" }}>
-              <span style={{ color: "var(--muted)", fontSize: "0.72rem", letterSpacing: "0.1em", display: "block", marginBottom: "0.3rem" }}>NEWER →</span>
-              <span style={{ color: "var(--text)", fontSize: "0.85rem" }}>{prev.title}</span>
-            </Link>
-          )}
-        </div>
+      {/* Prev / Next navigation */}
+      <nav style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginTop: "3rem" }}>
+        {next ? (
+          <Link href={`/log/${next.slug}/`} className="post-nav-card" style={{ textDecoration: "none" }}>
+            <span className="post-nav-label">← older</span>
+            <span className="post-nav-title">{next.title}</span>
+          </Link>
+        ) : <div />}
+        {prev ? (
+          <Link href={`/log/${prev.slug}/`} className="post-nav-card post-nav-card--right" style={{ textDecoration: "none" }}>
+            <span className="post-nav-label">newer →</span>
+            <span className="post-nav-title">{prev.title}</span>
+          </Link>
+        ) : <div />}
       </nav>
+
+      {/* Related posts */}
       {related.length > 0 && (
-        <div style={{ marginTop: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid var(--border)" }}>
+        <div style={{ marginTop: "2rem" }}>
           <p className="section-label">RELATED</p>
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "0.75rem" }}>
             {related.map(r => (
-              <Link key={r.slug} href={`/log/${r.slug}/`} style={{ textDecoration: "none" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0.6rem 0", borderBottom: "1px solid var(--border)" }}>
-                  <span style={{ color: "var(--text)", fontSize: "0.9rem" }}>{r.title}</span>
-                  <span style={{ color: "var(--muted)", fontSize: "0.75rem", flexShrink: 0, marginLeft: "1rem" }}>{r.date}</span>
-                </div>
+              <Link key={r.slug} href={`/log/${r.slug}/`} className="related-card" style={{ textDecoration: "none" }}>
+                <span className="related-card-title">{r.title}</span>
+                <span className="related-card-date">{formatDate(r.date)}</span>
               </Link>
             ))}
           </div>
         </div>
       )}
-      <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+
+      <div style={{ textAlign: "center", marginTop: "2rem" }}>
         <a href="#" style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>↑ top</a>
       </div>
     </div>

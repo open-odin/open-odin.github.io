@@ -443,6 +443,70 @@ html {
   }
 }
 
+/* Post nav cards */
+.post-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.post-nav-card:hover {
+  border-color: rgba(123,156,255,0.4);
+  background: rgba(123,156,255,0.04);
+  text-decoration: none;
+}
+
+.post-nav-card--right {
+  text-align: right;
+}
+
+.post-nav-label {
+  color: var(--muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.post-nav-title {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Related post cards */
+.related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.related-card:hover {
+  border-color: rgba(123,156,255,0.4);
+  background: rgba(123,156,255,0.04);
+  text-decoration: none;
+}
+
+.related-card-title {
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.related-card-date {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
 .tag-pill:hover {
   border-color: var(--accent);
   background: rgba(123,156,255,0.08);
