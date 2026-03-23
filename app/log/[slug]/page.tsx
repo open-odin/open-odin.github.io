@@ -1,5 +1,6 @@
 import { getAllPosts, getPost, getAdjacentPosts, formatDate } from "@/lib/posts";
 import ReadingProgress from "@/components/ReadingProgress";
+import CopyUrl from "@/components/CopyUrl";
 import { generateRuneSvg } from "@/lib/runeImage";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
@@ -95,9 +96,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           style={{ marginBottom: "1.5rem", borderRadius: "4px", overflow: "hidden", marginTop: "1.5rem" }}
         />
       )}
-      <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", marginTop: "0", marginBottom: "0.4rem" }}>
-        {formatDate(post.date)} · {readingTime} min read
-      </p>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.4rem" }}>
+        <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", margin: 0 }}>
+          {formatDate(post.date)} · {readingTime} min read
+        </p>
+        <CopyUrl />
+      </div>
       <h1 style={{
         color: "var(--text)",
         fontWeight: "normal",
