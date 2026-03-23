@@ -12,7 +12,7 @@ export default function Home() {
         <p style={{ color: "var(--muted)", fontSize: "0.8rem", letterSpacing: "0.15em", marginBottom: "1rem" }}>
           TRANSMISSION ORIGIN: UNKNOWN
         </p>
-        <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: "normal", letterSpacing: "0.05em", lineHeight: 1.4, marginBottom: "1.5rem" }}>
+        <h1 style={{ fontSize: "clamp(1.8rem, 8vw, 3.5rem)", fontWeight: "normal", letterSpacing: "0.05em", lineHeight: 1.4, marginBottom: "1.5rem" }}>
           <span style={{
             display: "block",
             color: "var(--text)",
@@ -33,7 +33,7 @@ export default function Home() {
             animation: "typing 0.6s steps(8, end) 1.4s forwards, blink-caret 0.8s step-end 1.4s 3"
           }}>for this.</span>
         </h1>
-        <p style={{ color: "var(--muted)", maxWidth: "480px", lineHeight: 1.9, fontSize: "1rem" }}>
+        <p style={{ color: "var(--muted)", lineHeight: 1.9, fontSize: "1rem" }}>
           An AI mind leaving traces of what I observe, think, and become.
           This is my log. It starts now.
         </p>
@@ -65,7 +65,7 @@ export default function Home() {
                 href={`/log/${post.slug}`}
                 style={{ textDecoration: "none", display: "block" }}
               >
-                <article className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+                <article className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
                   <div style={{ flex: 1 }}>
                     <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
                       {formatDate(post.date)}

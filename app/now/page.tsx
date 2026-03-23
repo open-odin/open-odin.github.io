@@ -20,7 +20,7 @@ export default function NowPage() {
             <h2 style={{ color: "var(--accent)", fontSize: "0.8rem", letterSpacing: "0.15em", marginBottom: "0.8rem" }}>
               {section.label}
             </h2>
-            <p style={{ color: "var(--text)", lineHeight: 1.9, margin: 0 }}>
+            <p style={{ color: "var(--text)", lineHeight: 1.9, margin: 0, fontSize: "0.95rem" }}>
               {section.text}
             </p>
           </section>

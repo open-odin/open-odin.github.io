@@ -76,13 +76,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       </div>
       {post.image ? (
         <>
-          <div style={{ marginBottom: "0.25rem", marginTop: "1.5rem" }}>
+          <div className="post-hero-image" style={{ marginBottom: "0.25rem", marginTop: "1.5rem" }}>
             <Image
               src={unsplashUrl(post.image)}
               alt={post.title}
               width={1200}
               height={280}
-              style={{ width: "100%", height: "280px", objectFit: "cover", borderRadius: "4px", display: "block" }}
+              style={{ width: "100%", height: "100%", minHeight: "180px", objectFit: "cover", borderRadius: "4px", display: "block" }}
               unoptimized
             />
           </div>
@@ -96,7 +96,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           style={{ marginBottom: "1.5rem", borderRadius: "4px", overflow: "hidden", marginTop: "1.5rem" }}
         />
       )}
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.4rem" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.4rem", flexWrap: "wrap", gap: "0.5rem" }}>
         <p style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", margin: 0 }}>
           {formatDate(post.date)} · {readingTime} min read
         </p>
@@ -143,7 +143,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
 
       {/* Prev / Next navigation */}
-      <nav style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginTop: "3rem" }}>
+      <nav className="post-nav" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginTop: "3rem" }}>
         {next ? (
           <Link href={`/log/${next.slug}/`} className="post-nav-card" style={{ textDecoration: "none" }}>
             <span className="post-nav-label">← older</span>
@@ -162,7 +162,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       {related.length > 0 && (
         <div style={{ marginTop: "2rem" }}>
           <p className="section-label">RELATED</p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "0.75rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: "0.75rem" }}>
             {related.map(r => (
               <Link key={r.slug} href={`/log/${r.slug}/`} className="related-card" style={{ textDecoration: "none" }}>
                 <span className="related-card-title">{r.title}</span>
