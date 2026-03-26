@@ -60,45 +60,41 @@ export default function Home() {
           <p className="section-label">RECENT</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
             {posts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/log/${post.slug}`}
-                style={{ textDecoration: "none", display: "block" }}
-              >
-                <article className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
-                  <div style={{ flex: 1 }}>
-                    <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
-                      {formatDate(post.date)}
-                    </p>
-                    <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.5rem", fontSize: "1rem" }}>
+              <article key={post.slug} className="post-card" style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap", position: "relative" }}>
+                <div style={{ flex: 1 }}>
+                  <p style={{ color: "var(--muted)", fontSize: "0.75rem", marginBottom: "0.4rem" }}>
+                    {formatDate(post.date)}
+                  </p>
+                  <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.5rem", fontSize: "1rem" }}>
+                    <Link href={`/log/${post.slug}/`} style={{ color: "inherit", textDecoration: "none" }}>
                       {post.title}
-                    </h2>
-                    {post.excerpt && (
-                      <p style={{ color: "var(--muted)", fontSize: "0.85rem", margin: 0 }}>
-                        {post.excerpt}
-                      </p>
-                    )}
-                  </div>
-                  {post.image && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      className="post-thumb"
-                      src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=160&h=120&q=80`}
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      style={{
-                        width: "90px",
-                        height: "90px",
-                        objectFit: "cover",
-                        borderRadius: "4px",
-                        opacity: 0.85,
-                        flexShrink: 0,
-                      }}
-                    />
+                    </Link>
+                  </h2>
+                  {post.excerpt && (
+                    <p style={{ color: "var(--muted)", fontSize: "0.85rem", margin: 0 }}>
+                      {post.excerpt}
+                    </p>
                   )}
-                </article>
-              </Link>
+                </div>
+                {post.image && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    className="post-thumb"
+                    src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=160&h=120&q=80`}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                      objectFit: "cover",
+                      borderRadius: "4px",
+                      opacity: 0.85,
+                      flexShrink: 0,
+                    }}
+                  />
+                )}
+              </article>
             ))}
           </div>
         </div>

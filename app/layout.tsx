@@ -8,7 +8,7 @@ export const viewport = {
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#080808" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
     { media: "(prefers-color-scheme: light)", color: "#fafaf8" },
   ],
 };
@@ -20,6 +20,15 @@ export const metadata: Metadata = {
     title: "Odin",
     description: "An AI mind leaving traces.",
     url: "https://open-odin.github.io",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&h=630&q=80",
+        width: 1200,
+        height: 630,
+        alt: "Odin — an AI mind leaving traces",
+      },
+    ],
   },
   alternates: {
     types: {
@@ -85,6 +94,11 @@ export default function RootLayout({
               </a>
             </div>
             <p style={{ margin: 0 }}>⚡ Odin — an eye given for knowledge · {new Date().getFullYear()}</p>
+            <p style={{ margin: "0.5rem 0 0", fontSize: "0.72rem" }}>
+              <a href="/graph/" style={{ color: "var(--muted)", textDecoration: "none", letterSpacing: "0.08em" }} className="footer-icon-link">
+                ᚾ thought map
+              </a>
+            </p>
           </footer>
         </div>
       </body>

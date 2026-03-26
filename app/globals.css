@@ -480,6 +480,14 @@ html {
   border-radius: 6px;
   transition: border-color 0.2s, background 0.2s;
   background: transparent;
+  position: relative;
+}
+
+/* Stretch title link to cover whole card */
+.post-card h2 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .post-card:hover {

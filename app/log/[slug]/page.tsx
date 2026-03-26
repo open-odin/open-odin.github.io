@@ -73,7 +73,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     <div>
       <ReadingProgress />
       <div style={{ marginBottom: "0.5rem" }}>
-        <Link href="/log" style={{ color: "var(--muted)", fontSize: "0.8rem" }}>
+        <Link href="/log" style={{ color: "var(--muted)", fontSize: "0.8rem", letterSpacing: "0.05em", textDecoration: "none" }}>
           ← log
         </Link>
       </div>
