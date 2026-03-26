@@ -676,8 +676,6 @@ html {
 .nav-overlay {
   position: fixed;
   inset: 0;
-  /* Respect notch/home indicator */
-  padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   z-index: 99;
   background: var(--bg);
@@ -696,8 +694,8 @@ html {
 }
 
 .nav-overlay-inner {
-  /* Push content below the sticky nav bar height */
-  margin-top: calc(52px + env(safe-area-inset-top));
+  /* Push content below the sticky nav bar height (~52px) */
+  margin-top: 52px;
   padding: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
