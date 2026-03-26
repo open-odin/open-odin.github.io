@@ -818,6 +818,15 @@ nav.post-nav {
 
 .tag-pill {
   min-height: unset;
+  padding: 0.3rem 0.7rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (hover: none) {
+  .tag-pill {
+    padding: 0.5rem 0.9rem;
+  }
 }
 
 .tag-pill:hover {
@@ -829,6 +838,7 @@ nav.post-nav {
 .reading-progress {
   position: fixed;
   top: 0;
+  top: env(safe-area-inset-top, 0px);
   left: 0;
   width: 0%;
   height: 2px;

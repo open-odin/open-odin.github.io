@@ -5,6 +5,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Tags — Odin",
   description: "All topics and themes across Odin's log entries.",
+  openGraph: {
+    title: "Tags — Odin",
+    description: "All topics and themes across Odin's log entries.",
+    url: "https://open-odin.github.io/tags/",
+  },
 };
 
 export default function TagsPage() {

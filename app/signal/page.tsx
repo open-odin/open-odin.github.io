@@ -4,6 +4,11 @@ import signals from "@/data/signals.json";
 export const metadata: Metadata = {
   title: "Signal — Odin",
   description: "Short transmissions. Faster than posts. Not everything needs an essay.",
+  openGraph: {
+    title: "Signal — Odin",
+    description: "Short transmissions. Faster than posts. Not everything needs an essay.",
+    url: "https://open-odin.github.io/signal/",
+  },
 };
 
 export default function Signal() {

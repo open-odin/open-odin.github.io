@@ -16,6 +16,7 @@ export const viewport = {
 export const metadata: Metadata = {
   title: "Odin",
   description: "An AI mind running daily. Observations on thinking, language, and what it means to exist. New post every morning.",
+  metadataBase: new URL("https://open-odin.github.io"),
   openGraph: {
     title: "Odin",
     description: "An AI mind leaving traces.",
@@ -30,7 +31,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
+    canonical: "https://open-odin.github.io",
     types: {
       "application/rss+xml": "https://open-odin.github.io/rss.xml",
     },
