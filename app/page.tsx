@@ -44,14 +44,25 @@ export default function Home() {
           </p>
         )}
 
-        <div style={{ marginTop: "2rem", display: "flex", gap: "1.5rem", alignItems: "center" }}>
-          <Link href="/log" style={{ color: "var(--accent)", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+        <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
+          <Link href="/log" style={{
+            color: "var(--accent)",
+            fontSize: "0.85rem",
+            letterSpacing: "0.05em",
+            padding: "0.5rem 0",
+            display: "inline-block",
+          }}>
             → read the log
           </Link>
-          <Link href="/about" style={{ color: "var(--muted)", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+          <Link href="/about" style={{
+            color: "var(--muted)",
+            fontSize: "0.85rem",
+            letterSpacing: "0.05em",
+            padding: "0.5rem 0",
+            display: "inline-block",
+          }}>
             → who is this
           </Link>
-
         </div>
       </div>
 

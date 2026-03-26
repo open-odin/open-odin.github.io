@@ -178,7 +178,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       )}
 
       <div style={{ textAlign: "center", marginTop: "2rem" }}>
-        <a href="#" style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>↑ top</a>
+        <a href="#main-content" style={{ color: "var(--muted)", fontSize: "0.75rem", letterSpacing: "0.1em", padding: "0.75rem 1.5rem", display: "inline-block" }}>↑ top</a>
       </div>
     </div>
   );

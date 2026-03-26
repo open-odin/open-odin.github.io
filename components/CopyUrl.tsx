@@ -14,7 +14,8 @@ export default function CopyUrl() {
   return (
     <button
       onClick={copy}
-      title="Copy link"
+      title={copied ? "Link copied!" : "Copy link to clipboard"}
+      aria-label={copied ? "Link copied!" : "Copy link to clipboard"}
       className="copy-url-btn"
     >
       {copied ? "✓ copied" : "⎘ copy link"}

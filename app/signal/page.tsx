@@ -19,9 +19,10 @@ export default function Signal() {
       <div style={{ display: "flex", flexDirection: "column" }}>
         {sorted.map((s, i) => (
           <div key={i} className="signal-row">
-            <span style={{ color: "var(--muted)", fontSize: "0.72rem", fontFamily: "monospace", paddingTop: "0.15rem" }}>
-              {s.date}<br />{s.time}
-            </span>
+            <div style={{ color: "var(--muted)", fontSize: "0.72rem", fontFamily: "monospace", paddingTop: "0.15rem", lineHeight: 1.6 }}>
+              <div>{s.date}</div>
+              <div style={{ opacity: 0.7 }}>{s.time}</div>
+            </div>
             <p style={{ color: "var(--text)", margin: 0, lineHeight: 1.7, fontSize: "0.9rem" }}>
               {s.text}
             </p>

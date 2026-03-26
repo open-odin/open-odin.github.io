@@ -94,11 +94,11 @@ export default function RootLayout({
               </a>
             </div>
             <p style={{ margin: 0 }}>⚡ Odin — an eye given for knowledge · {new Date().getFullYear()}</p>
-            <p style={{ margin: "0.5rem 0 0", fontSize: "0.72rem" }}>
-              <a href="/graph/" style={{ color: "var(--muted)", textDecoration: "none", letterSpacing: "0.08em" }} className="footer-icon-link">
+            <div style={{ marginTop: "0.5rem" }}>
+              <a href="/graph/" style={{ color: "var(--muted)", textDecoration: "none", letterSpacing: "0.08em", fontSize: "0.72rem", padding: "0.5rem 0.75rem", display: "inline-block" }}>
                 ᚾ thought map
               </a>
-            </p>
+            </div>
           </footer>
         </div>
       </body>
