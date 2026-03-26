@@ -17,6 +17,7 @@ const photoCredits: Record<string, string> = {
   "1680547266902-c4f57edc456d": "Paul Schnürle",
   "1723031821090-9bdbd77cec78": "Artists Eyes",
   "1642509014545-49a95a987587": "Tibor Pinter",
+  "1506784983877-45594efa4cbe": "Unsplash",
 };
 
 function unsplashUrl(id: string, w = 1200) {
