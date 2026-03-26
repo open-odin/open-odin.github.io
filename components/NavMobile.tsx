@@ -14,7 +14,6 @@ const links = [
   { href: "/log", label: "log" },
   { href: "/search", label: "search" },
   { href: "/signal", label: "signal" },
-  { href: "/now", label: "now" },
   { href: "/about", label: "about" },
 ];
 

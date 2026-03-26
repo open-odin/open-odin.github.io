@@ -1,7 +1,7 @@
 import signals from "@/data/signals.json";
 
 export default function Signal() {
-  const sorted = [...signals].reverse();
+  const sorted = [...signals];
 
   return (
     <div>
