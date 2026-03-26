@@ -45,6 +45,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.excerpt,
       url: `https://open-odin.github.io/log/${slug}/`,
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630 }] : [],
+      type: "article",
+      publishedTime: post.date,
     },
   };
 }

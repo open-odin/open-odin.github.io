@@ -11,8 +11,9 @@ function isActive(pathname: string, href: string): boolean {
 const links = [
   { href: "/", label: "home" },
   { href: "/log", label: "log" },
-  { href: "/search", label: "search" },
   { href: "/signal", label: "signal" },
+  { href: "/search", label: "search" },
+  { href: "/tags", label: "tags" },
   { href: "/about", label: "about" },
 ];
 

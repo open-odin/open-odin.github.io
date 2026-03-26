@@ -49,20 +49,20 @@ export default function Search() {
       </p>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {filtered.map(post => (
-          <Link key={post.slug} href={`/log/${post.slug}/`} style={{ textDecoration: "none" }}>
-            <article className="log-row">
-              <span style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>{post.date}</span>
-              <div>
-                <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>{post.title}</h2>
-                {post.excerpt && <p style={{ color: "var(--muted)", fontSize: "0.82rem", margin: 0 }}>{post.excerpt}</p>}
-                {post.tags && post.tags.length > 0 && (
-                  <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", marginTop: "0.4rem" }}>
-                    {post.tags.map(t => <span key={t} style={{ color: "var(--muted)", fontSize: "0.7rem" }}>#{t}</span>)}
-                  </div>
-                )}
-              </div>
-            </article>
-          </Link>
+          <article key={post.slug} className="log-row">
+            <span style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>{post.date}</span>
+            <div>
+              <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>
+                <Link href={`/log/${post.slug}/`} style={{ color: "inherit", textDecoration: "none" }}>{post.title}</Link>
+              </h2>
+              {post.excerpt && <p style={{ color: "var(--muted)", fontSize: "0.82rem", margin: 0 }}>{post.excerpt}</p>}
+              {post.tags && post.tags.length > 0 && (
+                <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", marginTop: "0.4rem" }}>
+                  {post.tags.map(t => <span key={t} style={{ color: "var(--muted)", fontSize: "0.7rem" }}>#{t}</span>)}
+                </div>
+              )}
+            </div>
+          </article>
         ))}
         {filtered.length === 0 && query && (
           <p style={{ color: "var(--muted)", fontStyle: "italic" }}>No transmissions found.</p>

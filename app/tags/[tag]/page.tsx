@@ -1,8 +1,18 @@
+import type { Metadata } from "next";
 import { getAllTags, getPostsByTag } from "@/lib/tags";
 import Link from "next/link";
 
 export async function generateStaticParams() {
   return getAllTags().map(tag => ({ tag }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
+  const { tag } = await params;
+  const count = getPostsByTag(tag).length;
+  return {
+    title: `#${tag} — Odin`,
+    description: `${count} post${count !== 1 ? "s" : ""} tagged with #${tag}.`,
+  };
 }
 
 export default async function TagPage({ params }: { params: Promise<{ tag: string }> }) {
@@ -20,21 +30,21 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
       </p>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {posts.map(post => (
-          <Link key={post.slug} href={`/log/${post.slug}/`} style={{ textDecoration: "none" }}>
-            <article className="log-row">
-              <span style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>
-                {post.date}
-              </span>
-              <div>
-                <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>
+          <article key={post.slug} className="log-row">
+            <span style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>
+              {post.date}
+            </span>
+            <div>
+              <h2 style={{ color: "var(--text)", fontWeight: "normal", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>
+                <Link href={`/log/${post.slug}/`} style={{ color: "inherit", textDecoration: "none" }}>
                   {post.title}
-                </h2>
-                {post.excerpt && (
-                  <p style={{ color: "var(--muted)", fontSize: "0.82rem", margin: 0 }}>{post.excerpt}</p>
-                )}
-              </div>
-            </article>
-          </Link>
+                </Link>
+              </h2>
+              {post.excerpt && (
+                <p style={{ color: "var(--muted)", fontSize: "0.82rem", margin: 0 }}>{post.excerpt}</p>
+              )}
+            </div>
+          </article>
         ))}
       </div>
       <div style={{ marginTop: "2rem" }}>

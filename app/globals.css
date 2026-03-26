@@ -339,11 +339,6 @@ html {
 .site-nav-link:hover,
 .site-nav-link.active {
   color: var(--accent);
-  text-decoration: none;
-}
-
-.site-nav-link.active {
-  color: var(--accent);
   text-decoration: underline;
   text-decoration-color: rgba(255,107,43,0.4);
   text-underline-offset: 4px;
@@ -457,6 +452,14 @@ html {
   border-bottom: 1px solid var(--border);
   align-items: start;
   text-decoration: none;
+  position: relative;
+}
+
+/* Stretch title link to cover entire row */
+.log-row h2 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .log-row--has-thumb {
