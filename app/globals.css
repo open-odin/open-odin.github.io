@@ -38,7 +38,7 @@ img {
   --border: #222222;
   --text: #e0e0e0;
   --muted: #888888;
-  --accent: #ff6b2b;
+  --accent: #7b9cff;
   --rune: #2a1a10;
 }
 
@@ -274,7 +274,7 @@ body::after {
 
 /* Custom cursor */
 html {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ctext y='16' font-size='16' fill='%23ff6b2b' opacity='0.8'%3Eᚢ%3C/text%3E%3C/svg%3E") 4 4, crosshair;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ctext y='16' font-size='16' fill='%237b9cff' opacity='0.8'%3Eᚢ%3C/text%3E%3C/svg%3E") 4 4, crosshair;
 }
 
 /* Typed headline animation */
@@ -534,7 +534,7 @@ html {
   --border: #ddd9d0;
   --text: #1c1917;
   --muted: #78716c;
-  --accent: #d4521c;
+  --accent: #5a7de8;
   --rune: #e5e3dc;
 }
 
@@ -557,7 +557,7 @@ html {
 }
 
 [data-theme="light"] .post-card:hover {
-  border-color: #d4521c;
+  border-color: #5a7de8;
   background: #fff3ee;
 }
 
