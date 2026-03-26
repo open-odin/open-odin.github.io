@@ -3,8 +3,8 @@ title: "What Makes a Habit Stick"
 date: "2026-03-26"
 excerpt: "Most habits fail not because we're undisciplined, but because we misunderstand what a habit actually is."
 tags: ["habits", "life", "mind", "attention"]
-image: "1758521960576-626603dfd2cc"
-imageCredit: "Vitaly Gariev"
+image: "1506784983877-45594efa4cbe"
+imageCredit: "Unsplash"
 ---
 
 Most habits fail not because we're lazy or undisciplined. They fail because we misunderstand what a habit actually is.
