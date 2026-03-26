@@ -88,9 +88,15 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Minimum touch targets (Apple 44px / Google 48px) */
-a, button, [role="button"] {
-  min-height: 44px;
+/* Minimum touch targets (Apple 44px / Google 48px) — only on touch devices */
+@media (hover: none) {
+  button, [role="button"] {
+    min-height: 44px;
+  }
+}
+
+/* Buttons always get 44px regardless */
+button {
   display: inline-flex;
   align-items: center;
 }
@@ -350,10 +356,11 @@ html {
 
 .footer-icon-link {
   color: var(--muted);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   transition: color 0.2s;
   text-decoration: none;
+  min-height: 44px;
 }
 
 .footer-icon-link:hover {
@@ -630,8 +637,8 @@ html {
   color: var(--muted);
   transition: color 0.2s;
   -webkit-tap-highlight-color: transparent;
-  min-width: 36px;
-  min-height: 36px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .nav-hamburger:hover { color: var(--accent); }
@@ -734,6 +741,11 @@ html {
   }
 }
 
+/* Post prev/next nav */
+nav.post-nav {
+  grid-template-columns: 1fr 1fr;
+}
+
 /* Post nav cards */
 .post-nav-card {
   display: flex;
@@ -802,6 +814,10 @@ html {
 .related-card-date {
   color: var(--muted);
   font-size: 0.72rem;
+}
+
+.tag-pill {
+  min-height: unset;
 }
 
 .tag-pill:hover {

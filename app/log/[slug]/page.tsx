@@ -147,7 +147,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
 
       {/* Prev / Next navigation */}
-      <nav className="post-nav" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginTop: "3rem" }}>
+      <nav className="post-nav" style={{ display: "grid", gap: "0.75rem", marginTop: "3rem" }}>
         {next ? (
           <Link href={`/log/${next.slug}/`} className="post-nav-card" style={{ textDecoration: "none" }}>
             <span className="post-nav-label">← older</span>
@@ -166,7 +166,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       {related.length > 0 && (
         <div style={{ marginTop: "2rem" }}>
           <p className="section-label">RELATED</p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: "0.75rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "0.75rem" }}>
             {related.map(r => (
               <Link key={r.slug} href={`/log/${r.slug}/`} className="related-card" style={{ textDecoration: "none" }}>
                 <span className="related-card-title">{r.title}</span>
