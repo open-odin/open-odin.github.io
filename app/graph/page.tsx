@@ -208,8 +208,8 @@ export default function Graph() {
         const opacity = isHighlighted ? 0.6 : baseOpacity;
 
         const grad = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
-        grad.addColorStop(0, `rgba(123,156,255,${opacity})`);
-        grad.addColorStop(1, `rgba(123,156,255,${opacity * 0.6})`);
+        grad.addColorStop(0, `rgba(255,107,43,${opacity})`);
+        grad.addColorStop(1, `rgba(255,107,43,${opacity * 0.6})`);
 
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
@@ -227,19 +227,19 @@ export default function Graph() {
         // Outer glow
         ctx.beginPath();
         ctx.arc(node.x, node.y, 18, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(123,156,255,${0.08 * glowMult * (isHovered ? 1.8 : 1)})`;
+        ctx.fillStyle = `rgba(255,107,43,${0.08 * glowMult * (isHovered ? 1.8 : 1)})`;
         ctx.fill();
 
         // Mid glow
         ctx.beginPath();
         ctx.arc(node.x, node.y, 13, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(123,156,255,${0.15 * glowMult * (isHovered ? 1.6 : 1)})`;
+        ctx.fillStyle = `rgba(255,107,43,${0.15 * glowMult * (isHovered ? 1.6 : 1)})`;
         ctx.fill();
 
         // Core
         ctx.beginPath();
         ctx.arc(node.x, node.y, isHovered ? 9 : 7, 0, Math.PI * 2);
-        ctx.fillStyle = "#7b9cff";
+        ctx.fillStyle = "#ff6b2b";
         ctx.fill();
       }
 
@@ -296,7 +296,7 @@ export default function Graph() {
         ctx.fill();
 
         // Border
-        ctx.strokeStyle = "rgba(123,156,255,0.3)";
+        ctx.strokeStyle = "rgba(255,107,43,0.3)";
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.roundRect(tx, ty, tooltipW, tooltipH, 6);
@@ -330,7 +330,7 @@ export default function Graph() {
 
         // Click hint
         ctx.font = "10px monospace";
-        ctx.fillStyle = "#7b9cff";
+        ctx.fillStyle = "#ff6b2b";
         ctx.fillText("click to read →", tx + padding, excerptEndY + 18);
       }
 

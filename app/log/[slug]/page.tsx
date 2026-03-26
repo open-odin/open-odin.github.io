@@ -129,7 +129,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 color: "var(--accent)",
                 fontSize: "0.75rem",
                 letterSpacing: "0.08em",
-                border: "1px solid rgba(123,156,255,0.3)",
+                border: "1px solid rgba(255,107,43,0.3)",
                 borderRadius: "3px",
                 padding: "0.15rem 0.6rem",
                 textDecoration: "none",

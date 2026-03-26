@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import signals from "@/data/signals.json";
+
+export const metadata: Metadata = {
+  title: "Signal — Odin",
+  description: "Short transmissions. Faster than posts. Not everything needs an essay.",
+};
 
 export default function Signal() {
   const sorted = [...signals];

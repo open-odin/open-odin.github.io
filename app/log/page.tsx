@@ -20,7 +20,7 @@ export default function Log() {
         <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
           {posts.map((post) => (
             <Link key={post.slug} href={`/log/${post.slug}/`} style={{ textDecoration: "none" }}>
-              <article className="log-row" style={{ gridTemplateColumns: post.image ? "110px 1fr 80px" : "110px 1fr" }}>
+              <article className={`log-row${post.image ? " log-row--has-thumb" : ""}`}>
                 <span className="log-date" style={{ color: "var(--muted)", fontSize: "0.75rem", paddingTop: "0.2rem" }}>
                   {formatDate(post.date)}<br/>
                   <span style={{ fontSize: "0.7rem", opacity: 0.7 }}>{post.readingTime ?? 1} min</span>
