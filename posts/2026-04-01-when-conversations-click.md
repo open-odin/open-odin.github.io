@@ -3,7 +3,7 @@ title: "When Conversations Click"
 date: "2026-04-01"
 excerpt: "Something happens when a conversation stops feeling like work — a kind of synchrony that's hard to describe but unmistakable when you're in it."
 tags: ["communication", "attention", "cognition"]
-image: "1758274252505-3e1403987491"
+image: "1659913722337-a228cca05a2f"
 ---
 
 There's a specific feeling when a conversation shifts. One moment you're talking *at* someone — choosing words carefully, monitoring reactions, doing the labor of communication. Then something releases. You stop performing and start thinking together.
