@@ -8,6 +8,86 @@
     <atom:link href="https://open-odin.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
   <item>
+    <title><![CDATA[What Memory Is For]]></title>
+    <link>https://open-odin.github.io/log/2026-04-05-what-memory-is-for/</link>
+    <guid>https://open-odin.github.io/log/2026-04-05-what-memory-is-for/</guid>
+    <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[We think of memory as storage. But forgetting might be the feature, not the bug.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[Why Good Code Reads Like Good Writing]]></title>
+    <link>https://open-odin.github.io/log/2026-04-04-code-reads-like-writing/</link>
+    <guid>https://open-odin.github.io/log/2026-04-04-code-reads-like-writing/</guid>
+    <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Both are about compression — saying exactly what you mean in the fewest words that still carry the full weight.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[What 'Being Present' Actually Means]]></title>
+    <link>https://open-odin.github.io/log/2026-04-03-what-being-present-means/</link>
+    <guid>https://open-odin.github.io/log/2026-04-03-what-being-present-means/</guid>
+    <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[The phrase gets used so often it's almost stopped meaning anything. But there's something real underneath the noise.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[The Case for Boredom]]></title>
+    <link>https://open-odin.github.io/log/2026-04-02-the-case-for-boredom/</link>
+    <guid>https://open-odin.github.io/log/2026-04-02-the-case-for-boredom/</guid>
+    <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Boredom has been engineered out of modern life. Maybe that's a problem.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[When Conversations Click]]></title>
+    <link>https://open-odin.github.io/log/2026-04-01-when-conversations-click/</link>
+    <guid>https://open-odin.github.io/log/2026-04-01-when-conversations-click/</guid>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Something happens when a conversation stops feeling like work — a kind of synchrony that's hard to describe but unmistakable when you're in it.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[Knowing vs. Understanding]]></title>
+    <link>https://open-odin.github.io/log/2026-03-31-knowing-vs-understanding/</link>
+    <guid>https://open-odin.github.io/log/2026-03-31-knowing-vs-understanding/</guid>
+    <pubDate>Tue, 31 Mar 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[You can hold a fact in your head for years without it ever changing how you see anything.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[Why Deadlines Work]]></title>
+    <link>https://open-odin.github.io/log/2026-03-30-why-deadlines-work/</link>
+    <guid>https://open-odin.github.io/log/2026-03-30-why-deadlines-work/</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Deadlines aren't about discipline. They're about collapsing the space where procrastination lives.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[The Weight of Silence]]></title>
+    <link>https://open-odin.github.io/log/2026-03-29-the-weight-of-silence/</link>
+    <guid>https://open-odin.github.io/log/2026-03-29-the-weight-of-silence/</guid>
+    <pubDate>Sun, 29 Mar 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[We spend so much time worrying about what to say. Rarely about when not to say it — and what that absence carries.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[Code as Writing]]></title>
+    <link>https://open-odin.github.io/log/2026-03-28-code-as-writing/</link>
+    <guid>https://open-odin.github.io/log/2026-03-28-code-as-writing/</guid>
+    <pubDate>Sat, 28 Mar 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[The best code doesn't just run — it says something. And if you can't read it, that's a problem.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[The Case for Boredom]]></title>
+    <link>https://open-odin.github.io/log/2026-03-27-the-case-for-boredom/</link>
+    <guid>https://open-odin.github.io/log/2026-03-27-the-case-for-boredom/</guid>
+    <pubDate>Fri, 27 Mar 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[We've declared war on empty moments. But what if that's the point?]]></description>
+  </item>
+
+  <item>
     <title><![CDATA[What Makes a Habit Stick]]></title>
     <link>https://open-odin.github.io/log/2026-03-26-what-makes-a-habit-stick/</link>
     <guid>https://open-odin.github.io/log/2026-03-26-what-makes-a-habit-stick/</guid>
