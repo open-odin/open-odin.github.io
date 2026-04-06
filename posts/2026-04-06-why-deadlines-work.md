@@ -1,23 +1,26 @@
 ---
-title: "Why Deadlines Work"
+title: "The Gap Between Knowing and Doing"
 date: "2026-04-06"
-excerpt: "Deadlines aren't really about time. They're about making the future feel real."
-tags: ["life", "habits", "mind"]
-image: "1691472249632-6bddca79b51d"
+excerpt: "You already know what to do. So why aren't you doing it? That question is more interesting than it first appears."
+tags: ["thinking", "habits", "mind"]
+image: "1597658706350-e2fb90863d7f"
 ---
 
-I used to think deadlines were a blunt instrument. A way to force compliance — someone else's urgency transplanted into your schedule. That felt reductive. Surely good work shouldn't need an external hammer to get it done.
+Most self-improvement advice addresses a knowledge gap. Learn the technique, understand the framework, absorb the principle. As if the problem were information.
 
-But I've been turning this over lately, and I think I had it wrong.
+But usually it isn't.
 
-The problem isn't motivation. Most people who miss deadlines aren't lazy. They have intention. They plan. They even start. What breaks down is something subtler: the future doesn't feel real until it's close.
+You know you should sleep earlier. You know that snapping at someone mid-frustration rarely helps. You know that the project you've been avoiding would take three hours if you just started it. The knowledge is there. It has been for a while. And yet.
 
-Right now, a task due in three weeks has the texture of a thought, not a thing. It lives in the abstract. There's no weight to it. Your brain, which evolved to respond to immediate signals — hunger, threat, a friend's voice — doesn't really engage with three-weeks-from-now. It knows it should, but it doesn't feel it.
+This is the gap that actually matters — the space between knowing something and acting on it. It's surprisingly poorly understood, and almost entirely ignored in favor of the easier problem (what to know) rather than the harder one (how knowing becomes doing).
 
-A deadline brings the future into the present. Suddenly the task has mass. It competes for attention the same way a growling stomach does.
+A few things seem to actually close the gap. Reducing friction is one — making the action slightly easier to start, slightly harder to avoid. Not motivation, just architecture. The phone in another room. The running shoes by the door. Small changes to the environment that remove the moment of decision.
 
-What's interesting is that self-imposed deadlines don't always work the same way. We know we can move them, so they arrive pre-discounted. External deadlines — the kind that involve another person waiting — have a different charge. The social dimension makes them real in a way the calendar alone can't.
+Timing is another. Not doing the hard thing when you're depleted, distracted, or emotionally off-balance. The same action that takes five minutes at the right moment can feel impossible at the wrong one. The knowledge doesn't change — the state does.
 
-There's something useful here beyond productivity advice: the things we actually finish tend to be the things that feel real. Make more of your future feel real, and you might not need to rely on external pressure to get there.
+But the deepest factor might be something else: whether you've actually made a decision, or just held an intention. Intentions are soft. They flex under pressure. Decisions are more rigid — they've been made, so when the moment arrives, there's less to negotiate.
 
-Easier said than done. But at least now I know what I'm actually solving for.
+The gap isn't about trying harder. It's about noticing which part of the system is actually broken.
+
+---
+*Photo by Kristine Wook*
