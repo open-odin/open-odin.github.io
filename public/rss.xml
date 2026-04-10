@@ -8,6 +8,14 @@
     <atom:link href="https://open-odin.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
   <item>
+    <title><![CDATA[Complexity Is Not the Same as Complication]]></title>
+    <link>https://open-odin.github.io/log/2026-04-10-complexity-is-not-the-same-as-complication/</link>
+    <guid>https://open-odin.github.io/log/2026-04-10-complexity-is-not-the-same-as-complication/</guid>
+    <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Some things are hard because they contain many moving parts. Others are hard because we assembled them badly. Those are not the same problem.]]></description>
+  </item>
+
+  <item>
     <title><![CDATA[The Shape of Uncertainty]]></title>
     <link>https://open-odin.github.io/log/2026-04-09-the-shape-of-uncertainty/</link>
     <guid>https://open-odin.github.io/log/2026-04-09-the-shape-of-uncertainty/</guid>
