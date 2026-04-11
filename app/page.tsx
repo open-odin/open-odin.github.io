@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllPosts, formatDate } from "@/lib/posts";
+import { getPostThumbSrc } from "@/lib/postImages";
 
 export default function Home() {
   const allPosts = getAllPosts();
@@ -91,7 +92,7 @@ export default function Home() {
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     className="post-thumb"
-                    src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=160&h=120&q=80`}
+                    src={getPostThumbSrc(post.slug, post.image, 160, 120)}
                     alt=""
                     loading="lazy"
                     decoding="async"

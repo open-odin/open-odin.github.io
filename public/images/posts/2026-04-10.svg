@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Complexity Is Not the Same as Complication</title>
+  <desc id="desc">Abstract geometric composition suggesting layered systems and structure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="100%" stop-color="#11151d"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7b9cff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7b9cff" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="8"/>
+  <g opacity="0.9">
+    <rect x="110" y="120" width="420" height="140" rx="6" fill="none" stroke="url(#line)" stroke-width="2"/>
+    <rect x="180" y="190" width="520" height="160" rx="6" fill="none" stroke="#7b9cff" stroke-opacity="0.22" stroke-width="2"/>
+    <rect x="470" y="150" width="280" height="90" rx="6" fill="#7b9cff" fill-opacity="0.05" stroke="#7b9cff" stroke-opacity="0.18"/>
+    <rect x="640" y="260" width="370" height="170" rx="6" fill="none" stroke="#7b9cff" stroke-opacity="0.25" stroke-width="2"/>
+    <path d="M210 440H980" stroke="#7b9cff" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="10 10"/>
+    <path d="M250 130V470" stroke="#7b9cff" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M560 110V520" stroke="#7b9cff" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M860 160V500" stroke="#7b9cff" stroke-opacity="0.08" stroke-width="2"/>
+  </g>
+  <text x="110" y="540" fill="#e8e8e8" font-family="Georgia, serif" font-size="38" letter-spacing="1.5">Complexity Is Not the Same as Complication</text>
+</svg>

@@ -2,6 +2,7 @@ import { getAllPosts, getPost, getAdjacentPosts, formatDate } from "@/lib/posts"
 import ReadingProgress from "@/components/ReadingProgress";
 import CopyUrl from "@/components/CopyUrl";
 import { generateRuneSvg } from "@/lib/runeImage";
+import { getPostHeroSrc, getPostOgImage } from "@/lib/postImages";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeHighlight from "rehype-highlight";
@@ -20,9 +21,6 @@ const photoCredits: Record<string, string> = {
   "1506784983877-45594efa4cbe": "Unsplash",
 };
 
-function unsplashUrl(id: string, w = 1200) {
-  return `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
-}
 
 export async function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
@@ -33,9 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPost(slug);
   if (!post) return {};
 
-  const ogImage = post.image
-    ? `https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=1200&h=630&q=80`
-    : undefined;
+  const ogImage = getPostOgImage(slug, post.image);
 
   return {
     title: `${post.title} — Odin`,
@@ -81,7 +77,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <>
           <div className="post-hero-image" style={{ marginBottom: "0.25rem", marginTop: "1.5rem" }}>
             <Image
-              src={unsplashUrl(post.image)}
+              src={getPostHeroSrc(slug, post.image) ?? ""}
               alt={post.title}
               width={1200}
               height={280}
@@ -91,7 +87,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             />
           </div>
           <p style={{ color: "var(--muted)", fontSize: "0.7rem", textAlign: "right", marginBottom: "1.5rem", marginTop: "0.3rem" }}>
-            photo by {photoCredits[post.image] ?? "Unsplash"} / Unsplash
+            photo by {photoCredits[post.image] ?? (getPostHeroSrc(slug, post.image)?.startsWith("/images/posts/") ? "Odin" : "Unsplash")} / {getPostHeroSrc(slug, post.image)?.startsWith("/images/posts/") ? "local artwork" : "Unsplash"}
           </p>
         </>
       ) : (

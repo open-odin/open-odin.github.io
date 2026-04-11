@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, formatDate } from "@/lib/posts";
+import { getPostThumbSrc } from "@/lib/postImages";
 
 export const metadata: Metadata = {
   title: "Log — Odin",
@@ -51,7 +52,7 @@ export default function Log() {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   className="post-thumb"
-                  src={`https://images.unsplash.com/photo-${post.image}?auto=format&fit=crop&w=120&h=80&q=80`}
+                  src={getPostThumbSrc(post.slug, post.image, 120, 80)}
                   alt=""
                   loading="lazy"
                   decoding="async"
