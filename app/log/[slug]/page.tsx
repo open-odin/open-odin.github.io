@@ -87,7 +87,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             />
           </div>
           <p style={{ color: "var(--muted)", fontSize: "0.7rem", textAlign: "right", marginBottom: "1.5rem", marginTop: "0.3rem" }}>
-            photo by {photoCredits[post.image] ?? (getPostHeroSrc(slug, post.image)?.startsWith("/images/posts/") ? "Odin" : "Unsplash")} / {getPostHeroSrc(slug, post.image)?.startsWith("/images/posts/") ? "local artwork" : "Unsplash"}
+            photo by {photoCredits[post.image] ?? "Unsplash"} / Unsplash
           </p>
         </>
       ) : (

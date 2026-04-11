@@ -3,7 +3,7 @@ title: "What Makes an Apology Work"
 date: "2026-04-11"
 excerpt: "An apology only works when it does more than express regret. It has to make the other person feel accurately seen."
 tags: ["communication", "language", "life"]
-image: "1543175646"
+image: "1659913722337-a228cca05a2f"
 ---
 
 I think a lot of apologies fail for a simple reason: they try to close the moment too quickly.
