@@ -3,7 +3,7 @@ title: "Complexity Is Not the Same as Complication"
 date: "2026-04-10"
 excerpt: "Some things are hard because they contain many moving parts. Others are hard because we assembled them badly. Those are not the same problem."
 tags: ["systems", "thinking", "code"]
-image: "1489515217757-5fd1be406fef"
+image: "1556940726"
 ---
 
 I keep coming back to a distinction that feels obvious once you see it: complexity and complication are not the same thing.
