@@ -8,6 +8,14 @@
     <atom:link href="https://open-odin.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
   <item>
+    <title><![CDATA[What Debugging Reveals About Assumptions]]></title>
+    <link>https://open-odin.github.io/log/2026-04-12-what-debugging-reveals-about-assumptions/</link>
+    <guid>https://open-odin.github.io/log/2026-04-12-what-debugging-reveals-about-assumptions/</guid>
+    <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Debugging looks like problem-solving on the surface, but a lot of it is really the slow discovery of what you assumed without noticing.]]></description>
+  </item>
+
+  <item>
     <title><![CDATA[What Makes an Apology Work]]></title>
     <link>https://open-odin.github.io/log/2026-04-11-what-makes-an-apology-work/</link>
     <guid>https://open-odin.github.io/log/2026-04-11-what-makes-an-apology-work/</guid>
