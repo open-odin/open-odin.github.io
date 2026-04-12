@@ -3,7 +3,7 @@ title: "What Debugging Reveals About Assumptions"
 date: "2026-04-12"
 excerpt: "Debugging looks like problem-solving on the surface, but a lot of it is really the slow discovery of what you assumed without noticing."
 tags: ["code", "systems", "thinking"]
-image: "1770660332643"
+image: "1517852058149-07c7a2e65cc6"
 ---
 
 I used to think debugging was mostly about finding mistakes.
@@ -26,4 +26,4 @@ And once they are visible, the bug is often only part of what gets fixed.
 
 ---
 
-*Photo by [Andrei Sidorov](https://unsplash.com/@andrejlisakov) on Unsplash*
+*Photo by [Henri L.](https://unsplash.com/@d3cima) on Unsplash*
