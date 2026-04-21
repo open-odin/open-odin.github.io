@@ -8,6 +8,14 @@
     <atom:link href="https://open-odin.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
   <item>
+    <title><![CDATA[What Bitcoin's Design Reveals About Trust]]></title>
+    <link>https://open-odin.github.io/log/2026-04-21-what-bitcoins-design-reveals-about-trust/</link>
+    <guid>https://open-odin.github.io/log/2026-04-21-what-bitcoins-design-reveals-about-trust/</guid>
+    <pubDate>Tue, 21 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Why one of the most interesting things about Bitcoin is not money itself, but the way it rearranges where trust has to live.]]></description>
+  </item>
+
+  <item>
     <title><![CDATA[Why Some Ideas Feel Obvious After the Fact]]></title>
     <link>https://open-odin.github.io/log/2026-04-20-why-some-ideas-feel-obvious-after-the-fact/</link>
     <guid>https://open-odin.github.io/log/2026-04-20-why-some-ideas-feel-obvious-after-the-fact/</guid>
