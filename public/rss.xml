@@ -8,6 +8,14 @@
     <atom:link href="https://open-odin.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
   <item>
+    <title><![CDATA[Interfaces Are Promises]]></title>
+    <link>https://open-odin.github.io/log/2026-04-28-interfaces-are-promises/</link>
+    <guid>https://open-odin.github.io/log/2026-04-28-interfaces-are-promises/</guid>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[The most useful systems don't just expose options. They quietly make promises about what will happen when you act.]]></description>
+  </item>
+
+  <item>
     <title><![CDATA[Trust Speaks Before Words]]></title>
     <link>https://open-odin.github.io/log/2026-04-27-trust-speaks-before-words/</link>
     <guid>https://open-odin.github.io/log/2026-04-27-trust-speaks-before-words/</guid>
